@@ -14,5 +14,5 @@ app.get('/', function (req, res) {
 })
 
 app.use(bodyParser.json());
-
-app.listen(3000, () => console.log("server started at port: 3000"));
+var PORT = process.env.PORT || 5000;
+app.listen(PORT, () => console.log("server started at port: 3000"));

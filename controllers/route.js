@@ -21,6 +21,10 @@ router.get('/', (req, res) =>{
     });
 });
 
+router.get('/index', (req, res) =>{
+    res.send("router work from heroku server");
+    });
+
 router.put('/addTicketStatus/:id', bodyParser.json(), (req, res) => {
     // console.log("the datq is ",req);
    
